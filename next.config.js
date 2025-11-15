@@ -4,8 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'image.tmdb.org',
-        pathname: '/**',
+        hostname: '**', // OMDb posters come from various domains
+      },
+      {
+        protocol: 'http',
+        hostname: '**', // Some posters may use http
       },
     ],
   },
