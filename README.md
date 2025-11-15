@@ -1,6 +1,6 @@
 # Streaming Dashboard
 
-A modern streaming service dashboard (Netflix/Hulu clone) built with Next.js 14, TypeScript, and Tailwind CSS. This application fetches movie data from The Movie Database (TMDB) API and displays it in a beautiful, responsive interface.
+A modern streaming service dashboard (Netflix/Hulu clone) built with Next.js 14, TypeScript, and Tailwind CSS. This application fetches movie data from the OMDb API and displays it in a beautiful, responsive interface.
 
 ## Features
 
@@ -15,7 +15,7 @@ A modern streaming service dashboard (Netflix/Hulu clone) built with Next.js 14,
 
 - Node.js 18+ installed
 - npm, pnpm, or yarn package manager
-- TMDB API key (free at [themoviedb.org](https://www.themoviedb.org/settings/api))
+- OMDb API key (free at [omdbapi.com](http://www.omdbapi.com/apikey.aspx))
 
 ## Getting Started
 
@@ -41,13 +41,13 @@ yarn install
 Create a `.env.local` file in the root directory:
 
 ```env
-TMDB_API_KEY=your_api_key_here
+OMDB_API_KEY=your_api_key_here
 ```
 
 To get your API key:
-1. Sign up at [themoviedb.org](https://www.themoviedb.org/)
-2. Go to Settings > API
-3. Request an API key (free tier is sufficient)
+1. Visit [omdbapi.com/apikey.aspx](http://www.omdbapi.com/apikey.aspx)
+2. Fill out the form to request a free API key
+3. Check your email for the API key
 4. Copy your API key to `.env.local`
 
 ### 4. Run the development server
@@ -79,7 +79,7 @@ streaming-dashboard/
 │   ├── layout.tsx              # Root layout
 │   └── page.tsx                # Homepage
 ├── lib/
-│   └── tmdb.ts                 # TMDB API helper functions
+│   └── tmdb.ts                 # OMDb API helper functions
 ├── types/
 │   └── movie.ts                # TypeScript interfaces
 ├── .env.local                  # Environment variables (not committed)
@@ -104,8 +104,8 @@ git push origin main
 2. Click "Add New Project"
 3. Import your GitHub repository
 4. Add environment variable:
-   - Name: `TMDB_API_KEY`
-   - Value: Your TMDB API key
+   - Name: `OMDB_API_KEY`
+   - Value: Your OMDb API key
 5. Click "Deploy"
 
 Your app will be live at `https://your-project.vercel.app`
@@ -122,7 +122,7 @@ Your app will be live at `https://your-project.vercel.app`
 - **Next.js 14** - React framework with App Router
 - **TypeScript** - Type-safe JavaScript
 - **Tailwind CSS** - Utility-first CSS framework
-- **TMDB API** - Movie database API
+- **OMDb API** - Open Movie Database API
 - **Next.js Image** - Optimized image component
 
 ## License
