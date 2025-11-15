@@ -22,7 +22,7 @@ A modern streaming service dashboard (Netflix/Hulu clone) built with Next.js 14,
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/NalagamdinniRaju/-Streaming-Dashboard.git
 cd streaming-dashboard
 ```
 
@@ -62,31 +62,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-## Project Structure
-
-```
-streaming-dashboard/
-├── app/
-│   ├── components/
-│   │   ├── Header.tsx          # Navigation header
-│   │   ├── HeroBanner.tsx      # Hero banner component
-│   │   ├── MovieCard.tsx       # Individual movie card
-│   │   └── MovieRow.tsx        # Horizontal scrolling row
-│   ├── movie/
-│   │   └── [id]/
-│   │       └── page.tsx        # Dynamic movie detail page
-│   ├── globals.css             # Global styles
-│   ├── layout.tsx              # Root layout
-│   └── page.tsx                # Homepage
-├── lib/
-│   └── tmdb.ts                 # OMDb API helper functions
-├── types/
-│   └── movie.ts                # TypeScript interfaces
-├── .env.local                  # Environment variables (not committed)
-├── next.config.js              # Next.js configuration
-├── tailwind.config.ts          # Tailwind CSS configuration
-└── package.json
-```
 
 ## Deployment to Vercel
 
